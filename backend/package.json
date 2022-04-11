@@ -2,9 +2,11 @@
   "name": "backend",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc -p"
   },
   "author": "so2turk",
   "license": "MIT",
