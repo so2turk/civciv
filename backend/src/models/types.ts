@@ -6,3 +6,12 @@ export interface IUser {
   password: String,
   birthYear: Date | String,
 }
+
+export interface ICivciv {
+  text: String,
+  writer: IUser,
+  likes: IUser [],
+  replies: ICivciv [],
+  replyTo: ICivciv,
+  reCivciv: IUser []
+}
