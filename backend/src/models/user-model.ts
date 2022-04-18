@@ -28,6 +28,24 @@ const userSchema = new mongoose.Schema<IUser>({
     required: true,
     min: 6,
   },
+  civcivs: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Civciv'
+    }
+  ],
+  likes: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User'
+    }
+  ],
+  reCivcivs: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Civciv'
+    }
+  ],
 })
 
 export default mongoose.model('User', userSchema)

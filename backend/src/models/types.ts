@@ -5,6 +5,9 @@ export interface IUser {
   email: String,
   password: String,
   birthYear: Date | String,
+  civcivs: ICivciv [],
+  likes: ICivciv [],
+  reCivcivs: ICivciv []
 }
 
 export interface ICivciv {
